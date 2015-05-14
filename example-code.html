@@ -1,0 +1,25 @@
+<!-- Begin iBex Booking iFrame Code -->
+<iframe id="ibex-booking-page" name="" onload="iBexFrame.SetHeight(this);" src="" width="100%" height="600px" scrolling="auto" frameborder="no" style="border: none; overflow-y: visible"></iframe>
+<script type="text/javascript">
+	// EDIT HERE
+	var ibOperatorID = 'arapawa'; // Your OperatorID
+	var ibPropID = 5416; // Your PropertyID
+	
+	// The public URL pointing at your SeekomMessageAgent.html file
+	var ibMsgAgentURL = 'http://example.com/my/path/to/ibex-message-agent.html';
+		
+	var ibOtherParams = {};
+	/* Other params to pass to the booking page, format
+		like: ibOtherParams.NAME = 'VALUE'; */
+	// ibOtherParams.th = 'NC008'; // Theme
+	// ibOtherParams.rmtype = '123,456,789'; // Specific rooms only
+	// ibOtherParams.ru = 'mycompany'; // Sales Channe / Company ID
+	// ibOtherParams.ata = 'true'; // Sales Channe / Company ID
+	
+	
+	// This line activates the booking page. The passed in parameter must match the ID of the iFrame above
+	iBexBookingFrameController.run('ibex-booking-page');
+	
+	// END EDITING (no need to edit any further)
+</script>
+<!-- End iBex Booking iFrame Code -->

@@ -1,0 +1,8 @@
+<script language="javascript" type="text/javascript">
+	function gP(g){if(g==null){var e=window.location.href.indexOf("?");return e<0?"":window.location.href.substr(e);}var d=g.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");d="[\\?&]"+d+"=([^&#]*)";var f=new RegExp(d);var c=f.exec(window.location.href);if(c==null)return "";else return c[1];}
+	var msgId = unescape(gP("msgId"));
+	var msg = unescape(gP("msg"));
+	var exp = new Date();
+	exp.setSeconds(exp.getSeconds() + 30);
+	document.cookie = msgId + "=" + escape(msg) + ";path=/;expires=" + exp.toUTCString() + ";domain=" + window.location.hostname + ";";
+</script>
